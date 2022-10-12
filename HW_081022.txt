@@ -1,0 +1,30 @@
+
+Задачи:
+в песочнице https://www.programiz.com/sql/online-compiler/ создать таблицу Employees, используя приложенный скрипт (employees.txt)
+
+1. из таблицы Employees вывести всех сотрудников с job_id FI_ACCOUNT
+Select *
+From Employees
+Where job_id = 'FI_ACCOUNT';
+
+2. вывести всех сотрудников, которые зарабатывают меньше 12000
+Select *
+From Employees 
+Where salary < 12000;
+
+3. вывести сотрудников из департаментов 70, 80, 100
+Select *
+From Employees
+Where department_id in (70,80,90);
+
+вывести всех сотрудников, у которых имя начинается на D
+Select *
+From Employees
+Where first_name like 'D%';
+
+вывести сотрудников, у которых employee_id от 108 до 143 (включая концы)
+Select *
+From Employees
+Where employee_id between 108 and 143;
+
+
