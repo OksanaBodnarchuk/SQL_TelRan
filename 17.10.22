@@ -3,5 +3,5 @@ create table goods (
   title varchar(30),  
   quantity integer CHECK (quantity > 0),
   price integer,
-  in_stock char(3) CHECK (in_stock = 'Y/N')
+  in_stock char(1) CHECK (in_stock in ('Y','N'))
 );
